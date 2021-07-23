@@ -6,7 +6,7 @@ readonly SRC_CURRENT_IOCS_URL="https://github.com/AmnestyTech/investigations/raw
 readonly RESULT_IOC_LINE_TEMPLATE="{\"id\": _ID_, \"type\": \"domain\", \"tag\": \"pegasus\", \"tlp\": \"white\", \"value\": \"_IOC_\"}"
 readonly RESULT_DELETE_LINE_TEMPLATE="{\"value\": \"_TODEL_\"}"
 readonly RESULT_CONTENT_TEMPLATE="{\"iocs\": [_IOCS_], \"to_delete\": [_TODELS_]}"
-readonly RESULT_FILE="tinypeg.iocs"
+readonly RESULT_FILE="tinypeg.json"
 SRC_BASE=$(wget -q -O - "${SRC_BASE_IOCS_URL}")
 SRC_INPUT=$(wget -q -O - "${SRC_CURRENT_IOCS_URL}")
 
